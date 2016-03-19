@@ -1,4 +1,3 @@
-# translate user input and put a hong kong accent on it
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template
 
@@ -13,9 +12,9 @@ app.config.from_object(__name__)
    
 @app.route('/')
 def translate():
-    return render_template('translate.html')
+    return render_template('calculate.html')
     
-@app.route('/translate', methods=['POST'])
+@app.route('/calculate', methods=['POST'])
 def add_entry(): 
 	
 	# input mathematical expression from buttons here:
@@ -90,7 +89,7 @@ def add_entry():
 	- error checking
 	'''
 
-	return render_template('translate.html')
+	return render_template('calculate.html', word="answer")
 
     
     
