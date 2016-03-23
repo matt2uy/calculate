@@ -8,9 +8,13 @@
       <br/>
       <div class="row">
         <div class="col-md-6">
-	   <div class="form group">
-		<div class="well well-sm" id="question_text">
-		{{answer_text|safe}}
+	   		<div class="form group">
+	   		<dd><textarea name=text class="form-control" rows="4" id="expression_input" padding="4px" placeholder="Type the expression here"></textarea>
+            <dd>
+
+
+			<div class="well well-sm" id="question_text">
+			{{answer_text|safe}}
 		</div>
 
 		
@@ -34,7 +38,7 @@
 
 		  <span><button type="button" class="btn btn-primary"%>2</button></span>
 		  <span><button type="button" class="btn btn-primary"%>3</button></span>
-		  <span><button href="/calculate" class="btn btn-primary"%>=</button></span>
+		  <span><button type="submit" class="btn btn-primary"%>=</button></span>
 		</div>
 
 

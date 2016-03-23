@@ -20,6 +20,9 @@ def add_entry():
 	# input mathematical expression from buttons here:
 	expression_string = "800+10-900"	# no spaces
 
+	##### get the expression from the user-inputted form
+	expression_string = str(request.form['text'])
+
 	# the expression is finalized when the '=' button is pressed
 	##### -> determine if equal button is pressed
 	# equal_button = pressed
@@ -88,6 +91,8 @@ def add_entry():
 	- other funnctions
 	- error checking
 	'''
+
+	print "expression string:", answer
 
 	return render_template('calculate.html', answer_text=answer)
 
