@@ -10,7 +10,7 @@
         <div class="col-md-6">
 	   <div class="form group">
 		<div class="well well-sm" id="question_text">
-		{{question_text|safe}}
+		{{answer_text|safe}}
 		</div>
 
 		
@@ -29,9 +29,12 @@
 		</div></span>
 
 		<div>
+		  
 		  <span><button type="button" class="btn btn-primary"%>1</button></span>
+
 		  <span><button type="button" class="btn btn-primary"%>2</button></span>
 		  <span><button type="button" class="btn btn-primary"%>3</button></span>
+		  <span><button href="/calculate" class="btn btn-primary"%>=</button></span>
 		</div>
 
 

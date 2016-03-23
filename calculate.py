@@ -89,7 +89,7 @@ def add_entry():
 	- error checking
 	'''
 
-	return render_template('calculate.html', word="answer")
+	return render_template('calculate.html', answer_text=answer)
 
     
     
