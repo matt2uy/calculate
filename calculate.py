@@ -78,10 +78,10 @@ def add_entry():
 
 	# convert the expression into an answer
 	expression_list = convert_expression_to_list(expression_string, expression_list)
-	print expression_list
+	print (expression_list)
 
 	answer = evaluate_expression(expression_list, answer)
-	print answer
+	print (answer)
 	
 	'''
 	- find out a way to configure web app buttons
@@ -92,7 +92,7 @@ def add_entry():
 	- error checking
 	'''
 
-	print "expression string:", answer
+	print ("expression string:", answer)
 
 	return render_template('calculate.html', answer_text=answer)
 
